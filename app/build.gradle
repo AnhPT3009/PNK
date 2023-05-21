@@ -3,17 +3,18 @@ plugins {
 }
 
 android {
-    namespace 'com.example.apptraveling'
+    namespace 'com.example.appqr'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.apptraveling"
+        applicationId "com.example.appqr"
         minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {

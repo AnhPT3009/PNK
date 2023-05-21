@@ -13,25 +13,28 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppTraveling"
+        android:theme="@style/Theme.AppQR"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="com.example.apptraveling.Activity.ShowDetailActivity"
+            android:name="com.example.appqr.Activity.ShowDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appqr.Activity.CartActivity"
             android:exported="false" />
 
         <activity
-            android:name="com.example.apptraveling.Activity.LoginActivity"
+            android:name="com.example.appqr.Activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.apptraveling.Activity.SignupActivity"
+            android:name="com.example.appqr.Activity.SignupActivity"
             android:exported="false" />
 
         <activity
-            android:name="com.example.apptraveling.Activity.EventActivity"
+            android:name="com.example.appqr.Activity.EventActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.apptraveling.Activity.SpActivity"
+            android:name="com.example.appqr.Activity.SpActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +43,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.apptraveling.Activity.HomeActivity"
+            android:name="com.example.appqr.Activity.HomeActivity"
             android:exported="false" />
     </application>
 
