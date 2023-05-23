@@ -18,6 +18,7 @@ import com.example.appqr.models.Cart;
 import com.example.appqr.models.SkDetail;
 import com.example.appqr.viewModels.ShowDetailViewModels;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import io.paperdb.Paper;
@@ -101,15 +102,21 @@ public class ShowDetailActivity extends AppCompatActivity {
     private void addToCart(int amount) {
         boolean checkExit = false;
         int n = 0;
-        if (Utils.cartList.size() > 0) {
-            for (int i = 0; i < Utils.cartList.size(); i++) {
-                if (Utils.cartList.get(i).getSkDetail().getId() == skDetail.getId()) {
-                    checkExit = true;
-                    n = i;
-                    break;
+        if(Utils.cartList != null){
+            if (Utils.cartList.size() > 0) {
+                for (int i = 0; i < Utils.cartList.size(); i++) {
+                    if (Utils.cartList.get(i).getSkDetail().getId() == skDetail.getId()) {
+                        checkExit = true;
+                        n = i;
+                        break;
+                    }
                 }
             }
         }
+        else{
+            Utils.cartList = new ArrayList<>();
+        }
+
         if (checkExit) {
             Utils.cartList.get(n).setAmount(amount);
         } else {
@@ -118,7 +125,7 @@ public class ShowDetailActivity extends AppCompatActivity {
             cart.setAmount(amount);
             Utils.cartList.add(cart);
         }
-        Toast.makeText(getApplicationContext(), "Added to your cart", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "Thêm vào giỏ hàng", Toast.LENGTH_LONG).show();
         Paper.book().write("cart", Utils.cartList);
     }
 

@@ -27,7 +27,7 @@
                     android:background="@drawable/back_edit"
                     android:drawableLeft="@drawable/ic_search"
                     android:drawablePadding="@dimen/_5sdp"
-                    android:hint="Search"
+                    android:hint="Tìm kiếm"
                     android:padding="@dimen/_5sdp"
                     tools:layout_editor_absoluteY="26dp" />
 
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_2sdp"
-                    android:text="Location"
+                    android:text="Địa điểm"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_15ssp"
                     android:textStyle="bold"
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_2sdp"
-                    android:text="Popular"
+                    android:text="Phổ biến"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_15ssp"
                     android:textStyle="bold"

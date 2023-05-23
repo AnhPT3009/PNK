@@ -17,7 +17,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="My Cart"
+                android:text="Thanh toán"
                 android:textSize="@dimen/_18ssp"
                 android:textColor="@color/purple_200"
                 android:textAlignment="center"
@@ -40,7 +40,7 @@
                     android:layout_weight="1"
                     android:textSize="@dimen/_15ssp"
                     android:textColor="@color/purple_200"
-                    android:text="Items"
+                    android:text="Số lượng"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -67,7 +67,7 @@
                     android:layout_weight="1"
                     android:textSize="@dimen/_15ssp"
                     android:textColor="@color/purple_200"
-                    android:text="Total"
+                    android:text="Tổng tiền"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
